@@ -17,3 +17,19 @@ const slides = [
     }
 ];
 
+let index = 0;
+
+// récupere la div #banner  que je stocke dans la constante slider pour afficher le slider
+const slider = document.querySelector('#banner');
+// recupere la div img que je stocke dans la constante sliderImg pour afficher les slides
+const sliderImg = document.querySelector('.banner-img');
+// recupere la balise p dans la div banner que je stocke dans la constante sliderTagLine pour afficher les textes
+const sliderTagLine = banner.querySelector('p');
+
+	// DÉCLARATION DES FONCTIONS 
+
+//pour afficher le slider 
+function showSlide(){
+	sliderImg.src = slides[index].image;
+	sliderTagLine.innerHTML = slides[index].tagLine;
+}
