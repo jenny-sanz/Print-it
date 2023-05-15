@@ -33,3 +33,31 @@ function showSlide(){
 	sliderImg.src = slides[index].image;
 	sliderTagLine.innerHTML = slides[index].tagLine;
 }
+
+//pour afficher slide suivante
+function nextSlide(){
+	index++;
+	if(index === slides.length){
+		index = 0;
+	}
+	showSlide();
+	
+	console.log ("slide suivante");
+}
+// pour afficher slide précédente
+function prevSlide(){
+	index--;
+	if(index<0){
+		index = slides.length-1;
+	}
+	showSlide();
+
+	console.log ("slide précedente");
+}
+
+// RÉCUPERATION DES FLECHES + AJOUT EVENT LISTENER AU CLIC
+const arrowRight = banner.querySelector('.arrow_right');
+arrowRight.addEventListener('click', nextSlide);
+
+const arrowLeft = banner.querySelector('.arrow_left');
+arrowLeft.addEventListener('click', prevSlide);	
