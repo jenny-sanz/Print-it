@@ -18,6 +18,7 @@ const slides = [
 ];
 
 let index = 0;
+
         // RÉCUPERER LES ÉLÉMENTS DU DOM A MODIFIER POUR LE SLIDER
 
 // récupere la div #banner que je stocke dans la constante slider pour afficher le slider
@@ -75,7 +76,7 @@ arrowLeft.addEventListener('click', prevSlide);
 
         // AJOUT DES BULLET POINTS
 const dotsContainer = document.querySelector('.dots');
-for (i = 0; i < slides.length; i++) {
+for (let i = 0; i < slides.length; i++) {
 	const dot = document.createElement('span');
 	dot.classList.add('dot');
 	// ajouter les bullets points au conteneur dots
