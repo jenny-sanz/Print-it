@@ -68,10 +68,10 @@ function dotActive(){
 }
 
         // RÉCUPERATION DES FLECHES + AJOUT EVENT LISTENER AU CLIC
-const arrowRight = banner.querySelector('.arrow_right');
+const arrowRight = slider.querySelector('.arrow_right');
 arrowRight.addEventListener('click', nextSlide);
 
-const arrowLeft = banner.querySelector('.arrow_left');
+const arrowLeft = slider.querySelector('.arrow_left');
 arrowLeft.addEventListener('click', prevSlide);	
 
         // AJOUT DES BULLET POINTS
